@@ -1,0 +1,14 @@
+[
+    {
+        "modid": "globaltabspongebridge",
+        "name": "GlobalTabSpongeBridge",
+        "version": "1.0",
+        "description": "GlobalTab's Sponge Bridge",
+        "dependencies": [
+            "spongeapi@7.1.0"
+        ],
+        "requiredMods": [
+            "spongeapi@7.1.0"
+        ]
+    }
+]
