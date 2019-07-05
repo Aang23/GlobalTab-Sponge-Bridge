@@ -1,0 +1,5 @@
+name: GlobalTabSpigotBridge
+version: 1.0
+main: com.aang23.globaltabspigotbridge.GlobalTabSpigotBridge
+description: GlobalTab's Spigot Bridge
+depend: [Vault]

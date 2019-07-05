@@ -1,7 +1,6 @@
 plugins {
     id 'java'
     id 'eclipse' //Forces dependencies to be in the classpath... Yes, I had issues
-    id 'org.spongepowered.plugin' version '0.9.0'
 }
 
 // This may not be required, but has solved issues in the past
@@ -9,18 +8,25 @@ compileJava.options.encoding = 'UTF-8'
 
 group = 'com.aang23'
 version = '1.0'
-description = 'The Sponge bridge for GlobalTab'
+description = 'The Spigot bridge for GlobalTab'
 
 repositories {
     jcenter()
+    
+    maven {
+        url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+    }
+    
+    maven {
+        url 'https://jitpack.io'
+    }
+
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots/'
+    }
 }
 
 dependencies {
-    compile 'org.spongepowered:spongeapi:7.1.0'
-}
-
-sponge {
-    plugin {
-        id = 'globaltabspongebridge'
-    }
+    compile 'org.spigotmc:spigot-api:1.13.2-R0.1-SNAPSHOT'
+    compile 'com.github.MilkBowl:VaultAPI:1.7'
 }
